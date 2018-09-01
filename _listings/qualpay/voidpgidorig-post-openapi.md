@@ -1,9 +1,11 @@
+---
 swagger: "2.0"
 x-collection-name: Qualpay
-x-complete: 1
+x-complete: 0
 info:
-  title: Qualpay Payment Gateway
-  description: this-document-describes-the-qualpay-payment-gateway-api-
+  title: Qualpay Payment Gateway Void previously authorized transaction
+  description: Authorizations can be voided at any time. Captured transactions can
+    be voided until the batch is closed.
   version: "1.7"
 host: api-test.qualpay.com
 basePath: /pg
@@ -218,3 +220,17 @@ paths:
           description: OK
       tags:
       - ""
+x-streamrank:
+  polling_total_time_average: 0
+  polling_size_download_average: 0
+  streaming_total_time_average: 0
+  streaming_size_download_average: 0
+  change_yes: 0
+  change_no: 0
+  time_percentage: 0
+  size_percentage: 0
+  change_percentage: 0
+  last_run: ""
+  days_run: 0
+  minute_run: 0
+---

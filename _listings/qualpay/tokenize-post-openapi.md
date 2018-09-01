@@ -1,9 +1,12 @@
+---
 swagger: "2.0"
 x-collection-name: Qualpay
-x-complete: 1
+x-complete: 0
 info:
-  title: Qualpay Payment Gateway
-  description: this-document-describes-the-qualpay-payment-gateway-api-
+  title: Qualpay Payment Gateway Tokenize card
+  description: Once stored, a unique card identifier is returned for use in future
+    transactions. Optionally, tokenization can be requested in an auth, verify, force,
+    credit, or sale message by sending the tokenize field set to true.
   version: "1.7"
 host: api-test.qualpay.com
 basePath: /pg
@@ -178,43 +181,17 @@ paths:
           description: OK
       tags:
       - ""
-  /verify:
-    post:
-      summary: Verify Card
-      description: A verify message will return success if the cardholder information
-        was verified by the issuer. If AVS or CVV data is included in the message,
-        then the AVS or CVV result code will be returned in the response message.
-      operationId: Verify
-      x-api-path-slug: verify-post
-      parameters:
-      - in: body
-        name: body
-        description: Payment Gateway Card Verify Request
-        schema:
-          $ref: '#/definitions/holder'
-      responses:
-        200:
-          description: OK
-      tags:
-      - ""
-  /void/{pgIdOrig}:
-    post:
-      summary: Void previously authorized transaction
-      description: Authorizations can be voided at any time. Captured transactions
-        can be voided until the batch is closed.
-      operationId: Void
-      x-api-path-slug: voidpgidorig-post
-      parameters:
-      - in: body
-        name: body
-        description: Payment Gateway Void Request
-        schema:
-          $ref: '#/definitions/holder'
-      - in: path
-        name: pgIdOrig
-        description: pgIdOrig
-      responses:
-        200:
-          description: OK
-      tags:
-      - ""
+x-streamrank:
+  polling_total_time_average: 0
+  polling_size_download_average: 0
+  streaming_total_time_average: 0
+  streaming_size_download_average: 0
+  change_yes: 0
+  change_no: 0
+  time_percentage: 0
+  size_percentage: 0
+  change_percentage: 0
+  last_run: ""
+  days_run: 0
+  minute_run: 0
+---

@@ -1,0 +1,33 @@
+{
+	"name": "Streadata.io API Gallery - Qualpay",
+	"description": "This is a repository of qualpay APIs, self-contained as a Github repository, with HTML and YAML representations of the APIs and their surrounding operations.",
+	"image": "http://template.streamdata.gallery/assets/qualpay.png",
+	"created": "2018-02-24",
+	"modified": "2018-08-31",
+	"url": "http://qualpay.streamdata.gallery/apis.json",
+	"specificationVersion": "0.14",
+	"apis": [
+		{
+			"name": "Qualpay",
+			"x-api-slug": "qualpay",
+			"description": "We provide an omnichannel payments platform, easily adaptable to individual needs, whether you are a business, a developer or a partner including Independent Sales Organizations (ISO) and Independent Software Vendor (ISV). Our fully-integrated payments platform combines a merchant account with a payment solution and reporting that todays businesses require.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/qualpay.png",
+			"humanURL": "http://qualpay.com",
+			"baseURL": "https://api-test.qualpay.com//pg",
+			"tags": "Qualpay",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-organizations/qualpay/master/_listings/qualpay/openapi.md"
+				}
+			]
+		}
+	],
+	"tags": "Qualpay",
+	"include": [
+		{
+			"name": "Qualpay",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-organizations/qualpay/master/_listings/qualpay/apis.yaml"
+		}
+	]
+}
